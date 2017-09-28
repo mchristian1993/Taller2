@@ -29,8 +29,8 @@ public class JsonCountry_1 {
             country.setPoblacion(item.getString("population"));
 country.setIdioma(item.getString("nativeName"));
 
-           // JSONObject languages = item.getJSONObject("languages");
-//country.setIdioma(languages.getString("nativeName"));
+           JSONObject languages = item.getJSONObject("languages");
+country.setIdioma(languages.getString("nativeName"));
 
             countryList.add(country);
         }
